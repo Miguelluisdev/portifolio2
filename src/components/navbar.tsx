@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { buttonVariants } from "./ui/button";
 import { ModeToggle } from "./theme";
 import {
@@ -11,7 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Menu, UserRoundCog } from "lucide-react";
-import { MaxWidthWrapper } from "./baselayout";
+import { BaseLayout} from "./baselayout";
 
 
 export const Navbar = () => {
@@ -20,7 +19,7 @@ export const Navbar = () => {
   return (
     <div className="sticky z-50 top-0 inset-x-0 h-16">
       <header className="relative">
-        <MaxWidthWrapper>
+        <BaseLayout>
           <div className="border-b rounded-full border-gray-200 bg-background shadow-md ">
             <div className="flex h-16 items-center">
               <div className="ml-4 flex items-center justify-around lg-ml-0">
@@ -31,6 +30,16 @@ export const Navbar = () => {
               <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch"></div>
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                {user ? (
+                    <p></p>
+                  ) : (
+                    <Link
+                      href="/"
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                      Home
+                    </Link>
+                  )}
                 {user ? null : (
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   )}
@@ -92,54 +101,73 @@ export const Navbar = () => {
                     <SheetContent>
                       <SheetHeader>
                         <SheetDescription className="flex flex-col items-center justify-center" >
-                        {user ? null : (
-                          <Link
-                            href="/funcionamento"
-                            className={buttonVariants({ variant: "ghost" })}
-                          >
-                            Funcionamento
-                          </Link>
-                        )}
-                        {user ? null : (
-                          <Link
-                            href="/products"
-                            className={buttonVariants({ variant: "ghost" })}
-                          >
-                            Veículos
-                          </Link>
-                        )}
-                        {user ? null : (
-                          <Link
-                            href="/sign-up"
-                            className={buttonVariants({ variant: "ghost" })}
-                          >
-                            Entrar
-                          </Link>
-                        )}
-                      
-                      {user ? (
-                        <p></p>
-                      ) : (
-                        <Link
-                          href="/sign-in"
-                          className={buttonVariants({ variant: "ghost" })}
-                        >
-                          Criar conta
+                        <Link href="/" className="text-xl" >
+                          Miguel Luis
                         </Link>
-                          )}
-                      <div className="ml-4 flow-root lg:ml-6">
-                        <ModeToggle />
-                      </div>
-                      <div className="ml-4 flow-root lg:ml-6">
-                      {user ? null : (
-                          <Link
-                            href="/profile"
-                            className={buttonVariants({ variant: "ghost" })}
-                          >
-                            <UserRoundCog />
-                          </Link>
-                      ) }
-                      </div>
+                        {user ? (
+                    <p></p>
+                  ) : (
+                    <Link
+                      href="/"
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                      Home
+                    </Link>
+                  )}
+                {user ? null : (
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                  )}
+                  {user ? (
+                    <p></p>
+                  ) : (
+                    <Link
+                      href="/about"
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                      Sobre Mim
+                    </Link>
+                  )}
+                  {user ? null : (
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                  )}
+                  {user ? (
+                    <p></p>
+                  ) : (
+                    <Link
+                      href="/projects"
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                     Projetos
+                    </Link>
+                  )}
+                    {user ? null : (
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                  )}
+                  {user ? (
+                    <p></p>
+                  ) : (
+                    <Link
+                      href="/contact"
+                      className={buttonVariants({ variant: "ghost" })}
+                    >
+                     Contatos
+                    </Link>
+                  )}
+                  {user ? (
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
+                  ) : null}
+
+                  {user ? null : (
+                    <div className="flex lg:ml-6">
+                      <span
+                        className="h-6 w-px bg-gray-200"
+                        aria-hidden="true"
+                      ></span>
+                    </div>
+                  )}
+                  <div className="ml-4 flow-root lg:ml-6">
+                    <ModeToggle />
+                  </div>
                         </SheetDescription>
                       </SheetHeader>
                     </SheetContent>
@@ -148,7 +176,7 @@ export const Navbar = () => {
               </div>
             </div>
           </div>
-        </MaxWidthWrapper>
+        </BaseLayout>
       </header>
     </div>
   );

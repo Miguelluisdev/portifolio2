@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
 
-export const MaxWidthWrapper = ({
+export const BaseLayout = ({
   className,
   children,
 }: {
