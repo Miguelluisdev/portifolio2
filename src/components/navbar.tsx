@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { ModeToggle } from "./theme";
@@ -11,6 +12,7 @@ import {
 } from "@/components/ui/sheet"
 import { Menu, UserRoundCog } from "lucide-react";
 import { BaseLayout} from "./baselayout";
+;
 
 
 export const Navbar = () => {

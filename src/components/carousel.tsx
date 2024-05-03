@@ -1,5 +1,5 @@
 import { CarouselItem, CarouselContent, CarouselPrevious, CarouselNext, Carousel } from "@/components/ui/carousel"
-import { AtomIcon, ChevronLeftIcon, ChevronRightIcon, ComponentIcon, DatabaseIcon, FacebookIcon, NetworkIcon } from "lucide-react"
+import { ChevronLeftIcon, ChevronRightIcon} from "lucide-react"
 import Image from "next/image"
 import { Button, buttonVariants } from "./ui/button"
 
