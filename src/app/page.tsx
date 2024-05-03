@@ -3,7 +3,6 @@ import { BaseLayout } from "@/components/baselayout";
 import { Icon } from "@/components/icon";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import { GrDocumentPdf } from "react-icons/gr";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
@@ -27,10 +26,9 @@ export default function Home() {
            Desde o primeiro dia, mergulhei de cabeça nesse universo em constante evolução, buscando incessantemente aprimorar minhas habilidades e conhecimentos. 
            Estou comprometido em aplicar meu conhecimento para solucionar os desafios mais complexos do mercado.
             </p>
-            <a href="" target="_blank">
+            <a href="https://wa.me/5521983179041" target="_blank">
               <Button className={buttonVariants({variant: "secondary"})} >
-                  Curriculo
-                <GrDocumentPdf />
+                  Contato
               </Button>
             </a>
           </div>

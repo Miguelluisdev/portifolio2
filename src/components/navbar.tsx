@@ -60,10 +60,10 @@ export const Navbar = () => {
                     <p></p>
                   ) : (
                     <Link
-                      href="/projects"
+                      href="/skills"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                     Projetos
+                     Habilidades
                     </Link>
                   )}
                     {user ? null : (
@@ -73,10 +73,10 @@ export const Navbar = () => {
                     <p></p>
                   ) : (
                     <Link
-                      href="/contact"
+                      href="/projects"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                     Contatos
+                     Projetos
                     </Link>
                   )}
                   {user ? (
@@ -134,10 +134,10 @@ export const Navbar = () => {
                     <p></p>
                   ) : (
                     <Link
-                      href="/projects"
+                      href="/skils"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                     Projetos
+                     Habilidades
                     </Link>
                   )}
                     {user ? null : (
@@ -147,10 +147,10 @@ export const Navbar = () => {
                     <p></p>
                   ) : (
                     <Link
-                      href="/contact"
+                      href="/projects"
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                     Contatos
+                     Projetos
                     </Link>
                   )}
                   {user ? (
