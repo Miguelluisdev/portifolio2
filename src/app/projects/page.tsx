@@ -1,3 +1,4 @@
+"use client"
 import { BaseLayout } from "@/components/baselayout"
 import Carrousel from "@/components/carousel"
 
