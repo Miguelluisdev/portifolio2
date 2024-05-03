@@ -114,9 +114,6 @@ export const Navbar = () => {
                       Home
                     </Link>
                   )}
-                {user ? null : (
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  )}
                   {user ? (
                     <p></p>
                   ) : (
@@ -127,22 +124,18 @@ export const Navbar = () => {
                       Sobre Mim
                     </Link>
                   )}
-                  {user ? null : (
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  )}
+                 
                   {user ? (
                     <p></p>
                   ) : (
                     <Link
-                      href="/skils"
+                      href="/skills"
                       className={buttonVariants({ variant: "ghost" })}
                     >
                      Habilidades
                     </Link>
                   )}
-                    {user ? null : (
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  )}
+                  
                   {user ? (
                     <p></p>
                   ) : (
@@ -153,18 +146,7 @@ export const Navbar = () => {
                      Projetos
                     </Link>
                   )}
-                  {user ? (
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  ) : null}
-
-                  {user ? null : (
-                    <div className="flex lg:ml-6">
-                      <span
-                        className="h-6 w-px bg-gray-200"
-                        aria-hidden="true"
-                      ></span>
-                    </div>
-                  )}
+                
                   <div className="ml-4 flow-root lg:ml-6">
                     <ModeToggle />
                   </div>
