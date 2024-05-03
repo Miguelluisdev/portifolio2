@@ -22,7 +22,6 @@ const Skills = () => {
                 width={50}
                   height={50}
                   alt="Tecnologies"
-                  className="rounded-full "
                 />
             <span className="text-xl font-bold">{skill.name}</span>
           </div>
