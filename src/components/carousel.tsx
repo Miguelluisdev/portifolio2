@@ -5,11 +5,11 @@ import { Button, buttonVariants } from "./ui/button"
 
  function Carrousel() {
   return (
-    <Carousel className="w-full max-w-4xl flex md:flex col items-center justify-center ml-14 pl-16 mt-28 mb-10">
+    <Carousel className="w-full max-w-4xl flex items-center justify-center  pl-16 mt-28 mb-10">
       <CarouselContent>
         <CarouselItem>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-10 grid-rows-1">
-            <div className="rounded-lg overflow-hidden">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-5 mr-5 grid-rows-1">
+            <div className="rounded-lg overflow-hidden ">
               <Image
                 alt="Project 1" 
                 className="w-full h-full object-cover"
@@ -73,7 +73,7 @@ import { Button, buttonVariants } from "./ui/button"
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="grid grid-cols-2 gap-6 md:gap-10">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-5 mr-5 grid-rows-1">
             <div className="rounded-lg overflow-hidden">
               <Image
                 alt="Project 2"
@@ -134,7 +134,7 @@ import { Button, buttonVariants } from "./ui/button"
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="grid grid-cols-2 gap-6 md:gap-10">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-5 mr-5 grid-rows-1">
             <div className="rounded-lg overflow-hidden">
               <Image
                 alt="Project 3"
@@ -196,7 +196,7 @@ import { Button, buttonVariants } from "./ui/button"
           
         </CarouselItem>
         <CarouselItem>
-          <div className="grid grid-cols-2 gap-6 md:gap-10">
+          <div className="grid sm:grid-cols-2 gap-6 md:gap-5 mr-5 grid-rows-1">
             <div className="rounded-lg overflow-hidden">
               <Image
                 alt="Project 3"
